@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AFX STUDIO | The Master's Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;900&amp;family=Manrope:wght@400;500&amp;family=Space+Grotesk:wght@300;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-container": "#2e3b77",
+              "on-tertiary": "#1e2b66",
+              "on-primary": "#3d2e00",
+              "on-error": "#690005",
+              "surface-container-lowest": "#0e0e0e",
+              "secondary-container": "#474746",
+              "on-surface": "#e5e2e1",
+              "surface-bright": "#3a3939",
+              "error-container": "#93000a",
+              "surface-container-high": "#2a2a2a",
+              "on-primary-fixed-variant": "#584400",
+              "on-tertiary-fixed": "#041451",
+              "inverse-on-surface": "#313030",
+              "primary-container": "#c9a84c",
+              "outline": "#99907e",
+              "on-background": "#e5e2e1",
+              "error": "#ffb4ab",
+              "background": "#131313",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-secondary": "#313030",
+              "inverse-surface": "#e5e2e1",
+              "primary": "#e6c364",
+              "primary-fixed-dim": "#e6c364",
+              "primary-fixed": "#ffe08f",
+              "tertiary": "#b9c4ff",
+              "tertiary-fixed-dim": "#b9c3ff",
+              "tertiary-container": "#9ba8eb",
+              "outline-variant": "#4d4637",
+              "surface-variant": "#353534",
+              "surface-container-low": "#1c1b1b",
+              "surface": "#131313",
+              "tertiary-fixed": "#dde1ff",
+              "inverse-primary": "#755b00",
+              "surface-dim": "#131313",
+              "surface-container-highest": "#353534",
+              "on-primary-container": "#503d00",
+              "secondary-fixed": "#e5e2e1",
+              "on-tertiary-fixed-variant": "#35437e",
+              "on-surface-variant": "#d0c5b2",
+              "surface-tint": "#e6c364",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-primary-fixed": "#241a00",
+              "on-secondary-fixed-variant": "#474746",
+              "surface-container": "#201f1f",
+              "on-error-container": "#ffdad6",
+              "on-secondary-container": "#b7b5b4",
+              "secondary": "#c8c6c5"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Manrope"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body { background-color: #131313; color: #e5e2e1; font-family: 'Manrope', sans-serif; overflow-x: hidden; }
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+      .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+      .kerning-tight { letter-spacing: -0.04em; }
+      .editorial-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem; }
+      .text-glow { text-shadow: 0 0 20px rgba(230, 195, 100, 0.3); }
+    </style>
+</head>
+<body class="selection:bg-primary-container selection:text-on-primary">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-xl flex justify-between items-center px-6 md:px-12 py-6 w-full">
+<div class="text-2xl font-black tracking-tighter text-[#e5e2e1] font-headline uppercase">AFX STUDIO</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-headline uppercase tracking-tighter font-bold text-[#e6c364] border-b border-[#e6c364] pb-1 transition-colors duration-300" href="/">Home</a>
+<a class="font-headline uppercase tracking-tighter font-bold text-[#e5e2e1]/70 hover:text-[#e6c364] transition-colors duration-300" href="/about/">About</a>
+<a class="font-headline uppercase tracking-tighter font-bold text-[#e5e2e1]/70 hover:text-[#e6c364] transition-colors duration-300" href="/filmography/">Filmography</a>
+<a class="font-headline uppercase tracking-tighter font-bold text-[#e5e2e1]/70 hover:text-[#e6c364] transition-colors duration-300" href="/contact/">Contact</a>
+</div>
+<button class="bg-[#c9a84c] text-[#3d2e00] px-8 py-2 font-headline font-bold uppercase tracking-tight transition-all duration-300 hover:bg-[#ffe08f]">
+            Inquire
+        </button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-start overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-50" data-alt="extreme close-up of hyper-realistic special effects makeup of a weathered alien creature skin with detailed textures and cinematic low-key lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnSOC03fQcVVTQ3p9tE5LzvO-649hrBmMtVo9HwoU9wo9gCAuE5lEdfzybgNyluWu3vyfCchgo5F2K09awh5019gK2PgPTxzMeMI4wDXzvu5qpWwdFXLzWlQmzf0eAPt7X8tca7ngYofqWxBpVD0o40ZD0usVZXfDj2b3ocw__Dxf9c7oM51EuokvVTl2y4fmf_jMRtszThxroeCTqFWM3NPo8u6dbwjOAyixbtyWfcDncxYz3xVaw8FtxJGkMqfAhNguLc7Bn1yQ"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-6 md:px-12 max-w-5xl">
+<span class="font-label uppercase tracking-[0.3em] text-primary mb-6 block">The Master's Atelier</span>
+<h1 class="font-headline text-6xl md:text-[8rem] leading-[0.9] font-black uppercase kerning-tight mb-8">
+                    CRAFTING THE <br/><span class="text-primary text-glow">UNREAL.</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface/80 max-w-xl leading-relaxed mb-10">
+                    Forty Years of Oscar-Winning Practical Effects and Creature Design.
+                </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-primary-container text-on-primary px-10 py-4 font-headline font-bold uppercase tracking-widest text-sm transition-all duration-500 hover:bg-primary">
+                        View Portfolio
+                    </button>
+<button class="border border-outline/30 px-10 py-4 font-headline font-bold uppercase tracking-widest text-sm text-on-surface hover:bg-on-surface hover:text-background transition-all duration-500">
+                        Our History
+                    </button>
+</div>
+</div>
+<!-- Atmospheric Lens Flare -->
+<div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] -mr-64 -mb-64"></div>
+</section>
+<!-- Awards Showcase -->
+<section class="bg-surface-container-lowest py-24 px-6 md:px-12">
+<div class="flex flex-col md:flex-row justify-between items-center gap-12 max-w-7xl mx-auto border-y border-outline-variant/20 py-16">
+<div class="flex flex-col items-center text-center gap-4 group">
+<span class="material-symbols-outlined text-5xl text-primary" data-weight="fill">workspace_premium</span>
+<div class="flex flex-col">
+<span class="font-headline text-4xl font-black uppercase">2x Academy Award</span>
+<span class="font-label text-xs tracking-widest text-on-surface/40 uppercase">Best Makeup and Hairstyling</span>
+</div>
+</div>
+<div class="h-px w-24 md:h-24 md:w-px bg-outline-variant/30"></div>
+<div class="flex flex-col items-center text-center gap-4">
+<span class="material-symbols-outlined text-5xl text-primary" data-weight="fill">military_tech</span>
+<div class="flex flex-col">
+<span class="font-headline text-4xl font-black uppercase">2x Emmy Winner</span>
+<span class="font-label text-xs tracking-widest text-on-surface/40 uppercase">Outstanding Special Effects</span>
+</div>
+</div>
+<div class="h-px w-24 md:h-24 md:w-px bg-outline-variant/30"></div>
+<div class="flex flex-col items-center text-center gap-4">
+<span class="material-symbols-outlined text-5xl text-primary" data-weight="fill">stars</span>
+<div class="flex flex-col">
+<span class="font-headline text-4xl font-black uppercase">Saturn Awards</span>
+<span class="font-label text-xs tracking-widest text-on-surface/40 uppercase">Career Achievement Recognition</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Expertise -->
+<section class="bg-surface py-32 px-6 md:px-12">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-20">
+<h2 class="font-headline text-5xl md:text-7xl font-black uppercase kerning-tight">THE ART OF <br/>TRANSFORMATION</h2>
+<p class="font-label text-primary uppercase tracking-widest hidden md:block">Expertise — 01</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<!-- Creature Design -->
+<div class="relative aspect-[3/4] bg-surface-container-high overflow-hidden group">
+<img class="w-full h-full object-cover grayscale brightness-75 transition-transform duration-700 group-hover:scale-110" data-alt="monochromatic studio shot of a clay-sculpted alien creature bust with intricate muscle structures and skeletal details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtaLXjjPqOM6tr29_8JzDmqH9o_W0vsGXyQh2jF36bR9OyzC5EfwF4bRmMDDVUfZKh5v7I1D-c61ooZSdRtogovCC__neLN1Eid6qRGmwD2f_iMC8zQdZIiIePTZJ4JzKAGZ4BrvptIJbVqr6atcWLyqjlTQzy4iMc31fZB_ecRoZsE8VaHg3bR5wfha6IhVQayS7ycq9YKLtyVZM2y8-EWAdeu6T6aDkk2o8OxKew6ykoxV9ZGwYg1YzChtPmuRu_mn0cr62tL0Y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+<h3 class="font-headline text-2xl font-bold uppercase mb-2">Creature Design</h3>
+<p class="font-body text-sm text-on-surface/60">Anatomical precision meets dark imagination.</p>
+</div>
+</div>
+<!-- SFX Makeup -->
+<div class="relative aspect-[3/4] bg-surface-container-high overflow-hidden group md:mt-12">
+<img class="w-full h-full object-cover grayscale brightness-75 transition-transform duration-700 group-hover:scale-110" data-alt="close-up of a high-fashion editorial makeup with prosthetic facial features and avant-garde textures under dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB3lrN7Ww2Lzo89MZwKZ_G9Gdy3gSkMN2YxSMyT97kMICqse0f0Lb3trJ6zeOeWxrSlIIVmT6d9VfI--cwoA-3nkuMInZthIMa6tj47v6A4U1V-29wG0rpnhj-v0kK_xtVauyAVMLLmTvuA18LSba9bAAeh6gXAH4nwUtt4TVdfaIkwu56Tk0V8vbd5jUY8_3xdG-vlp364jISJtK4kr1Ndx5fKxPuYOi2o8mdNT_3sVA9pDz321mndS0QFU_31RFCCkYE7GYsXDU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+<h3 class="font-headline text-2xl font-bold uppercase mb-2">SFX Makeup</h3>
+<p class="font-body text-sm text-on-surface/60">The industry standard in hyper-realism.</p>
+</div>
+</div>
+<!-- Character Creation -->
+<div class="relative aspect-[3/4] bg-surface-container-high overflow-hidden group">
+<img class="w-full h-full object-cover grayscale brightness-75 transition-transform duration-700 group-hover:scale-110" data-alt="a professional silicon mask being painted in a dark studio setting with precision brushes and oil paints" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQK_ir7Ef9pEPTE1HIR7HCjP9d0c5tpjLmeypiWScTAysFdIZI1SoAsXB_7yr1S14OLJQvtGJo_zHX9jkwXgJ_qlsMAHoOGGZ9CRxAyasghqK7TLvN5WnhDGl6N2mDJg6izh96unthM-MLenkPi9UD0yQPiwtbntRS5BNK5LF5zIZyN_DY8FvPHf2D0SBtieRoBrl3IYGrRax3sjNOIELe-5aRGNlaqPSq19yLaJO-jghCcfVjT2IrnuLbXjVe17xz9v0hX6anZ5E"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+<h3 class="font-headline text-2xl font-bold uppercase mb-2">Character Creation</h3>
+<p class="font-body text-sm text-on-surface/60">Defining the icons of cinematic history.</p>
+</div>
+</div>
+<!-- Concept Design -->
+<div class="relative aspect-[3/4] bg-surface-container-high overflow-hidden group md:mt-12">
+<img class="w-full h-full object-cover grayscale brightness-75 transition-transform duration-700 group-hover:scale-110" data-alt="digital concept art sketch of a dark gothic landscape with silhouette of a monstrous tower and cinematic fog" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5_UGM1s7T32pLHCTGMoyO_bO70wMbWMRdQrMNi_tryfj_z_tPhkf3jj5KwNWRTG6BkoCQtDAffTo1VSQZzRd58UUYeSIRG-Va2XsueaE5qkLv2enpUWVvNG5nvHV0if6M-DwpqkMcPsCUQhpoxjs9Y5kvsU8nfwuVbAhFUW_9SY6NK3E5HUg75BOSluRTdY7rKDkVBYX2PbIGimX_6-7G8Qhe7EvmJihkZ6PURL5pZkhcnJottQfKj9C0xXdHAub9x_aFW2CwkN0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+<h3 class="font-headline text-2xl font-bold uppercase mb-2">Concept Design</h3>
+<p class="font-body text-sm text-on-surface/60">Visualizing the impossible before it exists.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Filmography -->
+<section class="bg-surface-container-high py-32 overflow-hidden">
+<div class="px-6 md:px-12 max-w-7xl mx-auto mb-16">
+<span class="font-label text-primary uppercase tracking-[0.4em] mb-4 block">Selected Works</span>
+<h2 class="font-headline text-6xl md:text-8xl font-black uppercase kerning-tight">FILMOGRAPHY</h2>
+</div>
+<div class="flex overflow-x-auto pb-12 gap-8 px-6 md:px-12 no-scrollbar">
+<!-- Project 1 -->
+<div class="flex-none w-[400px] md:w-[600px] group">
+<div class="aspect-video overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="dark atmospheric cinematic still showing high-tech laboratory equipment with glowing green lights and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyvR2TITSkZMUoVefaXdEKPZIfdAR_-Dodm0Uo3Xz5sf_lh9v8t0xe5ThDIG0MXDESKa8gjLIqvIni_Ksx2b6HH7XIeBdYKi1fjchdkmYsGgx3MhfInVa3xXgyGz_OujBnbswpyMAqLiQNJeYiH28hSo6FJJRiszNaCtkOU3ug2zihoIAJ1ZcMh4iN4r-eV2vfmk9uoQOupkdNNoIf0FrgjUbNg9PwMw73TJjd048FTqAkzlbnyTiMKMoXKkS7NttPWM3qnSP07g8"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline text-3xl font-bold uppercase">Men in Black</h4>
+<p class="font-label text-primary/60 text-sm tracking-widest mt-1">Lead Creature Creation</p>
+</div>
+<span class="font-label text-on-surface/30">1997</span>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="flex-none w-[400px] md:w-[600px] group">
+<div class="aspect-video overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="eerie forest landscape at night with blue moonlight and heavy fog creating a mysterious horror atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ-IVUkXCcpagBbVU6jCqdaiF8KzRAsMAeM1nj1jue-8kC9Ghr0tfxjMpeFiHPyD2un6JbuZXEx1JvzFLNA4iSM5PEamtKZDieEm5BMnbSVWKajsW4JCbatZ_UAewylegNvM4tpESOvPdOJ6jBvC4ygURsmXTPaLgwyQCvlQk8d1BocvRPU1SEr5g_HYH8KurD9nwZ-YWthtMniVLTAn8cVc4X9k7foEv0TTUyBCoEbiHpzj-Dz7QOp-RBF057VdXn_zEFzaVVBpQ"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline text-3xl font-bold uppercase">American Horror Story</h4>
+<p class="font-label text-primary/60 text-sm tracking-widest mt-1">Special Makeup Effects</p>
+</div>
+<span class="font-label text-on-surface/30">2011—2023</span>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="flex-none w-[400px] md:w-[600px] group">
+<div class="aspect-video overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="abstract dark texture with golden light rays cutting through dust and smoke in a cinematic style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCohgXArVJQ7znj8z8uUgp6SDeMJRGKiIrQ51spRqV54o7sZwW0YORJuEx8lOatceQ-vHDpBWDOfjgyl9lOLT1SYyhNQ6s78YOs_A2-CNQ6xjv8Ch0-xVR8rt_XJ1hfcnMESacLjlnxscBh05of1maIA2BAHtG_KHormoC-2YF351NvsA3I2LtIyJeNrrMM4EKp8xlUtyFdkqq_lx_3Gw-Y9m85Zqap0veuMwLgL_laRP6FyM1pqsum1B4x7x5s_Q44cYc9MV7YUO8"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline text-3xl font-bold uppercase">Dawn of the Dead</h4>
+<p class="font-label text-primary/60 text-sm tracking-widest mt-1">Practical Creature FX</p>
+</div>
+<span class="font-label text-on-surface/30">2004</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Founder Section -->
+<section class="bg-surface py-32 px-6 md:px-12">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative order-2 md:order-1">
+<div class="aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover grayscale brightness-90" data-alt="black and white portrait of a master artist in a workshop with focused lighting and shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1Haw-3c3KWuYe9LXr02Jyn3_JfvWrHmpI62BUz7ADaxsxy4oGpT1Kp4GLkgJVzIZ7Qj-7ejIZaUGeNa6CDncMZMTTQU05Rz75u8nZBtZk3uuqic_VMjQfl7u4_7vOhCHyYyhA8SNB5J1wO21xRJgoOEx0L-3JLOVS38EnASBcXvKTo_yviPSAAGIa6p-RaxptBvBoqWDwza7DkJ6d_nmS4EwEd-IS8EGV0HqCO4ulJ6RdVRlrxS8x9jU_cx_gM0xcbTYdOjpmWd4"/>
+</div>
+<div class="absolute -bottom-10 -right-10 bg-primary p-12 hidden md:block">
+<span class="material-symbols-outlined text-background text-6xl" data-weight="fill">format_quote</span>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<span class="font-label text-primary uppercase tracking-[0.3em] mb-6 block">The Visionary</span>
+<h2 class="font-headline text-5xl md:text-7xl font-black uppercase kerning-tight mb-10 leading-[0.9]">DAVID LEROY ANDERSON</h2>
+<p class="font-body text-lg text-on-surface/80 leading-relaxed mb-8">
+                        The son of legendary SFX artist Lance Anderson, David's career spans over four decades of practical wizardry. From the iconic aliens of the MIB universe to the visceral horrors of American Horror Story, his work remains the gold standard of practical effects in Hollywood.
+                    </p>
+<div class="border-l-4 border-primary pl-8 py-2">
+<p class="font-headline text-2xl uppercase font-bold text-primary italic">"If we can dream it, we can build it. Real tools for unreal worlds."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="relative py-48 px-6 md:px-12 flex flex-col items-center justify-center text-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-[#0e0e0e]"></div>
+<!-- Subtle Texture Layer -->
+<div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+</div>
+<div class="relative z-10 max-w-4xl">
+<h2 class="font-headline text-6xl md:text-[9rem] leading-none font-black uppercase kerning-tight mb-12">
+                    BRING YOUR <br/>VISION TO <span class="text-primary">LIFE</span>
+</h2>
+<button class="bg-primary text-on-primary px-16 py-6 font-headline font-black uppercase tracking-[0.2em] text-lg hover:bg-primary-fixed transition-all duration-500 hover:scale-105">
+                    Start a Collaboration
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full py-20 px-6 md:px-12 border-t border-[#2a2a2a]/30 flex flex-col md:flex-row justify-between items-end w-full">
+<div class="flex flex-col gap-8 w-full md:w-auto mb-12 md:mb-0">
+<div class="text-lg font-bold text-[#e6c364] font-headline uppercase tracking-tighter">AFX STUDIO</div>
+<p class="font-label text-[#e5e2e1]/40 text-xs tracking-widest uppercase">
+                © 2024 AFX STUDIO. THE MASTER'S ATELIER.
+            </p>
+</div>
+<div class="flex flex-wrap gap-12 w-full md:w-auto justify-start md:justify-end">
+<div class="flex flex-col gap-3">
+<span class="font-label text-[#c9a84c] text-[10px] tracking-[0.3em] uppercase mb-2">Connect</span>
+<a class="font-label text-[#e5e2e1]/40 text-xs tracking-widest uppercase hover:text-[#e6c364] transition-all duration-500" href="#">Instagram</a>
+<a class="font-label text-[#e5e2e1]/40 text-xs tracking-widest uppercase hover:text-[#e6c364] transition-all duration-500" href="#">Vimeo</a>
+<a class="font-label text-[#e5e2e1]/40 text-xs tracking-widest uppercase hover:text-[#e6c364] transition-all duration-500" href="#">LinkedIn</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-label text-[#c9a84c] text-[10px] tracking-[0.3em] uppercase mb-2">Studio</span>
+<a class="font-label text-[#e5e2e1]/40 text-xs tracking-widest uppercase hover:text-[#e6c364] transition-all duration-500" href="#">Our Shop</a>
+<a class="font-label text-[#e5e2e1]/40 text-xs tracking-widest uppercase hover:text-[#e6c364] transition-all duration-500" href="#">Careers</a>
+<a class="font-label text-[#e5e2e1]/40 text-xs tracking-widest uppercase hover:text-[#e6c364] transition-all duration-500" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>

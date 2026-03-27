@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Filmography | AFX STUDIO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Manrope:wght@300;400;500&amp;family=Space+Grotesk:wght@300;500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-container": "#2e3b77",
+              "on-tertiary": "#1e2b66",
+              "on-primary": "#3d2e00",
+              "on-error": "#690005",
+              "surface-container-lowest": "#0e0e0e",
+              "secondary-container": "#474746",
+              "on-surface": "#e5e2e1",
+              "surface-bright": "#3a3939",
+              "error-container": "#93000a",
+              "surface-container-high": "#2a2a2a",
+              "on-primary-fixed-variant": "#584400",
+              "on-tertiary-fixed": "#041451",
+              "inverse-on-surface": "#313030",
+              "primary-container": "#c9a84c",
+              "outline": "#99907e",
+              "on-background": "#e5e2e1",
+              "error": "#ffb4ab",
+              "background": "#131313",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-secondary": "#313030",
+              "inverse-surface": "#e5e2e1",
+              "primary": "#e6c364",
+              "primary-fixed-dim": "#e6c364",
+              "primary-fixed": "#ffe08f",
+              "tertiary": "#b9c4ff",
+              "tertiary-fixed-dim": "#b9c3ff",
+              "tertiary-container": "#9ba8eb",
+              "outline-variant": "#4d4637",
+              "surface-variant": "#353534",
+              "surface-container-low": "#1c1b1b",
+              "surface": "#131313",
+              "tertiary-fixed": "#dde1ff",
+              "inverse-primary": "#755b00",
+              "surface-dim": "#131313",
+              "surface-container-highest": "#353534",
+              "on-primary-container": "#503d00",
+              "secondary-fixed": "#e5e2e1",
+              "on-tertiary-fixed-variant": "#35437e",
+              "on-surface-variant": "#d0c5b2",
+              "surface-tint": "#e6c364",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-primary-fixed": "#241a00",
+              "on-secondary-fixed-variant": "#474746",
+              "surface-container": "#201f1f",
+              "on-error-container": "#ffdad6",
+              "on-secondary-container": "#b7b5b4",
+              "secondary": "#c8c6c5"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Manrope"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "9999px"},
+          },
+        },
+      }</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Manrope', sans-serif;
+            overflow-x: hidden;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+        .glass-header {
+            background: rgba(19, 19, 19, 0.9);
+            backdrop-filter: blur(20px);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(230, 195, 100, 0.3);
+        }
+    </style>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;900&amp;family=Manrope:wght@400;500&amp;family=Space+Grotesk:wght@300;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+  </head>
+<body class="overflow-x-hidden bg-surface">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-xl flex justify-between items-center px-6 md:px-12 py-6 w-full">
+<div class="text-2xl font-black tracking-tighter text-[#e5e2e1] font-headline uppercase">AFX STUDIO</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-headline uppercase tracking-tighter font-bold text-[#e6c364]  pb-1 transition-colors duration-300" href="/">Home</a>
+<a class="font-headline uppercase tracking-tighter font-bold text-[#e5e2e1]/70 hover:text-[#e6c364] transition-colors duration-300" href="/about/">About</a>
+<a class="font-bold border-b-2 border-current font-headline uppercase tracking-tighter font-bold text-[#e5e2e1]/70 hover:text-[#e6c364] transition-colors duration-300" href="/filmography/">Filmography</a>
+<a class="font-headline uppercase tracking-tighter font-bold text-[#e5e2e1]/70 hover:text-[#e6c364] transition-colors duration-300" href="/contact/">Contact</a>
+</div>
+<button class="bg-[#c9a84c] text-[#3d2e00] px-8 py-2 font-headline font-bold uppercase tracking-tight transition-all duration-300 hover:bg-[#ffe08f]">
+            Inquire
+        </button>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-[921px] flex items-end overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Cinematic Hero" class="w-full h-full object-cover grayscale opacity-40" data-alt="Cinematic wide shot of a classic film set with a vintage camera on a dolly, dramatic low-key lighting and atmospheric fog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_4EnoWgE3I_wLwUgSbPQ9rxkGzsQMGjPQ7gY0VHmvdpc3yPVf6kUhJf3TL6n4GlyPXsAVGoqVGuKZbbSzpL_FZgRjwFjv0HAaorxeI4uz9AQ3NHXm9wlH-7TxX2ELmwAOeGSo8zX5V-0JXwrmvoTlHM5JENZem7tStuX_rl5sOKM_iNqrg92vDLhmGTshMu65_f3I0mDdyb5Rh6DPinkH-rh_ZkKCCAjCLNpQNr-6HV__mn5MuDjKVVNM2z9h7l5cn5Twu_VhZFc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-12 pb-24 w-full">
+<p class="font-label text-primary uppercase tracking-[0.4em] mb-4">The Portfolio</p>
+<h1 class="font-headline text-8xl md:text-[12rem] leading-[0.85] font-black uppercase tracking-tighter">
+                FILMO<br/>GRAPHY
+            </h1>
+</div>
+</header>
+<!-- Featured Showreel -->
+<section class="w-full bg-surface-container-lowest py-32 px-12">
+<div class="editorial-grid gap-8 items-center">
+<div class="col-span-12 md:col-span-5 mb-12 md:mb-0">
+<h2 class="font-headline text-5xl uppercase tracking-tighter mb-8 text-on-surface">The Master's <br/><span class="text-primary">Atelier in Motion</span></h2>
+<p class="font-body text-on-surface/70 leading-relaxed mb-10 max-w-md">
+                    Watch the evolution of prosthetic artistry. From the groundbreaking work on Men In Black to the visceral horror of American Horror Story, our showreel captures three decades of physical transformation.
+                </p>
+<button class="bg-primary-container text-on-primary px-12 py-5 font-label font-bold uppercase tracking-widest hover:bg-primary-fixed transition-all duration-300">
+                    Play Showreel
+                </button>
+</div>
+<div class="col-span-12 md:col-span-7 relative group cursor-pointer">
+<div class="aspect-video bg-surface-container-high overflow-hidden relative">
+<img alt="Studio Showreel" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Dramatic close-up of a special effects makeup artist applying detailed silicone prosthetics to a creature's face under cinematic studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChM5-9rnwzOySrn4dY304AOnYJZuAY1n8bVXxrq4R8lG5uRyqhDaYyPBMQq9x0W0RRQoCjDp33NSJVtfjkGkYsvpazUZXpPeAdQ099n8TwaWNtYQhIIg9F3Xqz6NpJGWk2p86szpCU1-6lOWW6uey1TOGIk1wRGWhhVrFe0r_v8QsuDiRU--GqiLv6vEYStD81CgiZozk-Haj1FvrabMCh2SkTsKDIlNmP7NR7vAeNWZbav7zgJxLQzogXq70sfaKMifbVDvCgHE8"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<div class="w-24 h-24 border border-primary flex items-center justify-center rounded-full group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Filmography Grid -->
+<section class="w-full px-12 py-32 bg-surface">
+<div class="flex justify-between items-baseline mb-24">
+<h3 class="font-headline text-4xl uppercase tracking-tighter">Selected Works</h3>
+<span class="font-label text-on-surface/40 tracking-[0.2em]">1996 — PRESENT</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-24 gap-x-8">
+<!-- Card: Men In Black -->
+<div class="flex flex-col gap-6">
+<div class="aspect-[3/4] bg-surface-container-high overflow-hidden">
+<img alt="Men In Black" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="High contrast black and white shot of an alien prosthetic mask with detailed texture and gloss on a black background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_C7jra_rtKnsyuhILJFvE-y7o0XrrPT6kDiusKgLGXcVYEuEnzLa-wCTqmGGP9-ecpxfsQHawsIaX1sZfDVr4VhUg9qT7Z8vcx7S4rhRQUXYrUSp6x4j8w5EXBVdeACf2fjKMMrDsj3ka5OyxVcrrjiOsr3Z3nWdv4xj5YFqyaR3SQLPcEscwJjeNzyZ7S7zphK4dnT9Wc9M8ml29JbbIWjRpIUdID5oJmt73fha43q9HhpI_AKTNeQ2qRU9I2wEXL32-VkbnP4I"/>
+</div>
+<div>
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline text-2xl uppercase tracking-tight">Men In Black</h4>
+<span class="font-label text-primary text-xs border border-primary/30 px-2 py-1">ACADEMY AWARD</span>
+</div>
+<p class="font-label text-on-surface/50 text-xs mb-1">1997</p>
+<p class="font-body text-on-surface/80 text-sm">Alien Character Design &amp; Special Effects Makeup</p>
+</div>
+</div>
+<!-- Card: The Nutty Professor -->
+<div class="flex flex-col gap-6 lg:mt-12">
+<div class="aspect-[3/4] bg-surface-container-high overflow-hidden">
+<img alt="The Nutty Professor" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Abstract cinematic portrait showcasing extreme facial transformation and prosthetic skin textures in a studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-l-TJ1HkTXpu2baln67Gvr_W6_KHLCEfagjvbBxU6KlgBg2FCOZ1qKdhfUHkhZAtnV7StIDZZhFgUjO57Wom-r1uaSPyTGjRojcyy4eplAXyIxwQi0a7viaTlEufmJ_oUfdR-wtvqvd_1SwgqAMCv981TJybEnHABztvoH_rKEaxW_C_oyagj9Z-O4GWrLue1RJDkNL_ioxYMkGbF77V147Xv8uR1eD65ypklZ14BzGtP7Mu1iko3cmS7YF0urqpI3gtC8aOi2sQ"/>
+</div>
+<div>
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline text-2xl uppercase tracking-tight">The Nutty Professor</h4>
+<span class="font-label text-primary text-xs border border-primary/30 px-2 py-1">ACADEMY AWARD</span>
+</div>
+<p class="font-label text-on-surface/50 text-xs mb-1">1996</p>
+<p class="font-body text-on-surface/80 text-sm">Special Character Makeup</p>
+</div>
+</div>
+<!-- Card: AHS Freak Show -->
+<div class="flex flex-col gap-6">
+<div class="aspect-[3/4] bg-surface-container-high overflow-hidden">
+<img alt="AHS Freak Show" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Eerie and dramatic portrait of a circus performer with elaborate dark avant-garde makeup and haunting lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4IWTKUpMBx31QJA4Ku-ONnGqCt-FhAZhf8bdPt4N0UiRBjO3LefVmoPv5HA7UWW40YHCPE1m-lfguQ1CPq_KvmTVnN4qbeKNtbAdrUn6NUxtsLyBA8hz0JRalfl9BhPdLnT9qd5tL1VRFnVkxalAQ60RNj1-It9-3rB2rGvdpfjWLoMajd94NW5EJWpiYk-MriGtL_iOSweYig1n2hiafRJQTVad4K3zY4gbGS2peREQYBp-iMxl0LGQo8CILZY43BY1ZtXbnTic"/>
+</div>
+<div>
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline text-2xl uppercase tracking-tight">AHS: Freak Show</h4>
+<span class="font-label text-primary text-xs border border-primary/30 px-2 py-1">EMMY WINNER</span>
+</div>
+<p class="font-label text-on-surface/50 text-xs mb-1">2014</p>
+<p class="font-body text-on-surface/80 text-sm">Prosthetic Design &amp; Fabrication</p>
+</div>
+</div>
+<!-- Card: Dawn of the Dead -->
+<div class="flex flex-col gap-6 lg:mt-12">
+<div class="aspect-[3/4] bg-surface-container-high overflow-hidden">
+<img alt="Dawn of the Dead" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Close-up of hyper-realistic zombie makeup with decaying skin textures and cinematic blood effects, dark moody atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5D2QBtMifwzFPULlHMiWlWiBDHcp3aAmy3B1LddnUtnuYVYB0iGlpS3GCGq93J87r-LaQfzxyE8fJcbSeJQPXxOLy_xMlVMFk7c_nbflyh6f0hHh6GcqJS1hk59Q3YoN0d37gEadvWxWLDTfBZaRjFrnVG-8WEATD6itduwlxAKM_nSRS0FmP3J6wXuePFPEMyXaItZheJpIg1qzrdDuBh92AKRJRgEN7TsZAFjrRBDARIKP_zyrw21b6f6y6fp5zIb_1e56oKHU"/>
+</div>
+<div>
+<h4 class="font-headline text-2xl uppercase tracking-tight mb-2">Dawn of the Dead</h4>
+<p class="font-label text-on-surface/50 text-xs mb-1">2004</p>
+<p class="font-body text-on-surface/80 text-sm">Special Makeup Effects &amp; Creature Design</p>
+</div>
+</div>
+<!-- Card: Star Trek Into Darkness -->
+<div class="flex flex-col gap-6">
+<div class="aspect-[3/4] bg-surface-container-high overflow-hidden">
+<img alt="Star Trek" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Sleek sci-fi makeup design showing futuristic skin modifications and technical precision on a human subject." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFlAVMktSB6nF8HADNZ94eOWWBbT3jbfGzgP1G8QaH1RDqZOhaTfkE3wD_Q-LTsfupC3xVHAEopLrf8oxX5Y5a1L8EnHhyTu5X6NUMx_QRjJWCaF4LAWwLJHadUkFdQVwZJ4sdf_9IF0D4Cn5FAJUjJsQ_h9IwvlLoI3_OapXFWkljsBn6ZGJDOJUWYyM42kVgH91rQat3wvXsfXSuJEZLYKzOBalxtbp5qe7lTGPKOty-jZ-oPCZFn8incV9Y7OPlK4PNepLCPKg"/>
+</div>
+<div>
+<h4 class="font-headline text-2xl uppercase tracking-tight mb-2">Star Trek Into Darkness</h4>
+<p class="font-label text-on-surface/50 text-xs mb-1">2013</p>
+<p class="font-body text-on-surface/80 text-sm">Alien Makeup Effects</p>
+</div>
+</div>
+<!-- Card: Cabin in the Woods -->
+<div class="flex flex-col gap-6 lg:mt-12">
+<div class="aspect-[3/4] bg-surface-container-high overflow-hidden">
+<img alt="Cabin in the Woods" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Monstrous creature claw with intricate scale details and wet slime texture emerging from the shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzF8OqoIF0mUfrzzNGBlM7qZK1H6Ao44JJjbBOsZY9RNjrU2JIk0miDKeoFnMT5A_A5S39DI1DWc_A56hInL0iCn7BMXpOubO53ekId5ap1LvfMO0NjpkEwBpYquZhSQn-X-vCubyJsrKZID-iNCmnmyC4kd-l5NFO-zpjsnD8YgaVbNPPaos8WuLFTqTeZn-tofXT-9xPeo7HO61mqA0XI_SZtrlSMxxhS26dMXRn6GJOgdUp8LD0CSKrS_sJF6GHqnpJZzeNbik"/>
+</div>
+<div>
+<h4 class="font-headline text-2xl uppercase tracking-tight mb-2">Cabin in the Woods</h4>
+<p class="font-label text-on-surface/50 text-xs mb-1">2011</p>
+<p class="font-body text-on-surface/80 text-sm">Creature Creation &amp; Makeup FX</p>
+</div>
+</div>
+<!-- Card: American Sniper -->
+<div class="flex flex-col gap-6">
+<div class="aspect-[3/4] bg-surface-container-high overflow-hidden">
+<img alt="American Sniper" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Realistic wound and trauma makeup on a dusty desert setting, capturing the grittiness of modern warfare films." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGHBBToVgF5uU_6FcrBH5WUX_h4GLXb3R_19LnnJi9PCW_z2lI_zUcTU-4_fVg3M88bMHPqAkj6LsFrg0Vnoj8iXd_VftD0fuDwyhbDzNp2YosOnQiLGvutjJvka_H7qH76b6PmMtW1h3Yxx5kln0vr3sKInEFfnyWrhH-iRSMT6ls0kCEFoLj2dNU0Sy4e3mf2zqdnRt0dsAAk-8oaE0YxoBY7WAvXl2zRf5NEV-MtVGc3kKQhJX19LTHqbiCvsr8luNbN16-1a0"/>
+</div>
+<div>
+<h4 class="font-headline text-2xl uppercase tracking-tight mb-2">American Sniper</h4>
+<p class="font-label text-on-surface/50 text-xs mb-1">2014</p>
+<p class="font-body text-on-surface/80 text-sm">Special Makeup Effects</p>
+</div>
+</div>
+<!-- Card: The Crow -->
+<div class="flex flex-col gap-6 lg:mt-12">
+<div class="aspect-[3/4] bg-surface-container-high overflow-hidden">
+<img alt="The Crow" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Gothic character makeup with white face paint and dark eye accents, dramatic rainy atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZdj1kip_o6Os07WP3c1Y32rm9-wg-A-sjQrd9GrDQCkCWUtlOKi97j-WT3Ba8SzkNAyvUjT6tr0NA2Jch4hwaa10B86SlVAAsFsqdUJrvGROufH7pY4TMto6T6Hb67gxyUdQv9hT4mWjXt0rL4JfTuvUZ_X20ocKYi61l9cADwtsxUBvN8G8g8ztEluIUrokSKt-zFNRuRqZxaWHRQ69iNmOq4mHsQSTBYnHn58Gz3EyuidfRqL1ysxjTZGpnevo7dJdKB3qXw7I"/>
+</div>
+<div>
+<h4 class="font-headline text-2xl uppercase tracking-tight mb-2">The Crow</h4>
+<p class="font-label text-on-surface/50 text-xs mb-1">1994</p>
+<p class="font-body text-on-surface/80 text-sm">Character Design &amp; Makeup FX</p>
+</div>
+</div>
+</div>
+<!-- Secondary Grid List -->
+<div class="mt-40 editorial-grid border-t border-outline-variant/30 pt-16">
+<div class="col-span-12 grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="border-l border-primary/20 pl-6 pb-8">
+<span class="font-label text-primary text-xs uppercase mb-2 block">OSCAR NOMINATION</span>
+<h5 class="font-headline text-xl uppercase mb-1">Cinderella Man</h5>
+<p class="font-body text-on-surface/60 text-sm italic">Special Makeup Effects</p>
+</div>
+<div class="border-l border-outline-variant/30 pl-6 pb-8">
+<span class="font-label text-on-surface/40 text-xs uppercase mb-2 block">2017</span>
+<h5 class="font-headline text-xl uppercase mb-1">Billy Lynn's Long Halftime Walk</h5>
+<p class="font-body text-on-surface/60 text-sm italic">Character Transformation</p>
+</div>
+<div class="border-l border-outline-variant/30 pl-6 pb-8">
+<span class="font-label text-on-surface/40 text-xs uppercase mb-2 block">2009</span>
+<h5 class="font-headline text-xl uppercase mb-1">Angels &amp; Demons</h5>
+<p class="font-body text-on-surface/60 text-sm italic">Special Effects Makeup</p>
+</div>
+<div class="border-l border-outline-variant/30 pl-6 pb-8">
+<span class="font-label text-on-surface/40 text-xs uppercase mb-2 block">2008</span>
+<h5 class="font-headline text-xl uppercase mb-1">Frost/Nixon</h5>
+<p class="font-body text-on-surface/60 text-sm italic">Prosthetic Makeup</p>
+</div>
+<div class="border-l border-outline-variant/30 pl-6 pb-8">
+<span class="font-label text-on-surface/40 text-xs uppercase mb-2 block">2010</span>
+<h5 class="font-headline text-xl uppercase mb-1">Dinner for Schmucks</h5>
+<p class="font-body text-on-surface/60 text-sm italic">Character Makeup</p>
+</div>
+<div class="border-l border-outline-variant/30 pl-6 pb-8">
+<span class="font-label text-on-surface/40 text-xs uppercase mb-2 block">2005</span>
+<h5 class="font-headline text-xl uppercase mb-1">Lords of Dogtown</h5>
+<p class="font-body text-on-surface/60 text-sm italic">Special Character Makeup</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mid-Page CTA Section -->
+<section class="w-full h-[614px] relative flex items-center justify-center text-center px-12 overflow-hidden bg-surface-container-high">
+<div class="absolute inset-0 opacity-20">
+<img alt="Studio Background" class="w-full h-full object-cover" data-alt="Wide shot of a professional special effects laboratory with shelves of prosthetic heads, jars of pigment, and sculpting tools." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARHpC-5LAFGOBI72e1hFHubTfqasxbD4ZSSKtH39L5-Fy4H0K2NSQielfNsU_ewr_hAgcAGTkWUYNUUIPPENW0qCtus3-ShHDoHTAEztey33EHKVbUJ_jLvKH_XdSppSGA9Mh51mGUL4mOe6zpwoV5ZwDZw-ACRAYHA45C8QtBYyVn2_A_lf8LgW0O_xOm7y3gnhFKJLoA8viFWv_L3FKRHdZYPJvNxQoPjk2PmtBo7rpu8FwcHQSP89t83S5V6RemWsG0d5MBJCY"/>
+</div>
+<div class="relative z-10 max-w-4xl">
+<h2 class="font-headline text-5xl md:text-7xl uppercase tracking-tighter mb-8">BRINGING THE <br/><span class="text-primary">IMPOSSIBLE TO LIFE.</span></h2>
+<p class="font-body text-lg text-on-surface/70 mb-12 max-w-2xl mx-auto">From early concept sculpting to final on-set application, AFX Studio remains the industry standard for practical effects and character transformation.</p>
+<a class="inline-block bg-primary-container text-on-primary px-16 py-6 font-label font-bold uppercase tracking-widest hover:bg-primary-fixed transition-colors" href="/contact/">Start a Collaboration</a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full py-20 px-6 md:px-12 border-t border-[#2a2a2a]/30 flex flex-col md:flex-row justify-between items-end w-full">
+<div class="flex flex-col gap-8 w-full md:w-auto mb-12 md:mb-0">
+<div class="text-lg font-bold text-[#e6c364] font-headline uppercase tracking-tighter">AFX STUDIO</div>
+<p class="font-label text-[#e5e2e1]/40 text-xs tracking-widest uppercase">
+                © 2024 AFX STUDIO. THE MASTER'S ATELIER.
+            </p>
+</div>
+<div class="flex flex-wrap gap-12 w-full md:w-auto justify-start md:justify-end">
+<div class="flex flex-col gap-3">
+<span class="font-label text-[#c9a84c] text-[10px] tracking-[0.3em] uppercase mb-2">Connect</span>
+<a class="font-label text-[#e5e2e1]/40 text-xs tracking-widest uppercase hover:text-[#e6c364] transition-all duration-500" href="#">Instagram</a>
+<a class="font-label text-[#e5e2e1]/40 text-xs tracking-widest uppercase hover:text-[#e6c364] transition-all duration-500" href="#">Vimeo</a>
+<a class="font-label text-[#e5e2e1]/40 text-xs tracking-widest uppercase hover:text-[#e6c364] transition-all duration-500" href="#">LinkedIn</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-label text-[#c9a84c] text-[10px] tracking-[0.3em] uppercase mb-2">Studio</span>
+<a class="font-label text-[#e5e2e1]/40 text-xs tracking-widest uppercase hover:text-[#e6c364] transition-all duration-500" href="#">Our Shop</a>
+<a class="font-label text-[#e5e2e1]/40 text-xs tracking-widest uppercase hover:text-[#e6c364] transition-all duration-500" href="#">Careers</a>
+<a class="font-label text-[#e5e2e1]/40 text-xs tracking-widest uppercase hover:text-[#e6c364] transition-all duration-500" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>
